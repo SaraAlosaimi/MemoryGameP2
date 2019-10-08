@@ -29,6 +29,14 @@ function closedCard()
  /*-------------------------------*/
 function clickedCard()
     {
+         //updated cardHasBeenOpend() day:9-10-2019 //note(1)
+        //first check if card has been open 
+         if(this.classList.contains("show"))
+            {
+                 return;
+                 //do nothing just to solve double click problem  in same card to be match
+            }
+         //end 
         //only  allow 2 card to open to compare if match or not 
         if(cardHasBeenOpend.length < 2 )
             {
@@ -232,7 +240,7 @@ function startGame()
         StopTimer();//should clear timer before game staring agan
         runTimer();
         movesNum=0;
-        //Finaltime=0;
+        Finaltime=0;//update note(2)
         starsNum=3;
         iconlabel=[];//clears array when game start again 
         //iconlabel=[];
