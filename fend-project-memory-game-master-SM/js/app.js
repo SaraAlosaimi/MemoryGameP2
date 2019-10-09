@@ -240,12 +240,11 @@ function startGame()
         StopTimer();//should clear timer before game staring agan
         runTimer();
         movesNum=0;
-        Finaltime=0;//update note(2)
+        Finaltime=0;
         starsNum=3;
         iconlabel=[];//clears array when game start again 
-        //iconlabel=[];
-        //StopTimer();
-        
+        cardHasBeenOpend=[];//update note(2)
+  
         closedCard();
         matched();
         shuffleCard();
